@@ -1,3 +1,3 @@
 # [deploy](https://ne-danik.github.io/major-dom/)
 
-![](https://github.com/ne-danik/images/blob/6762eb4f93274e92f8807dfa35ad4678d2959b6f/major-dom.png)
+![](https://github.com/ne-danik/major-dom/blob/e2d9c68ad81c2194a2118c188ca3cb9702dfc98b/preview.jpg)
