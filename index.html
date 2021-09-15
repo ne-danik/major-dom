@@ -15,8 +15,8 @@
 
   <header class="header">
     <nav class="header__nav">
-      <div class="header__nav-wrapper">
-        <div class="header-logo">
+      <div class="container header__nav-container">
+        <div class="logo">
           <a href="#">
             <img src="images/logo.svg" alt="MajorDom Hostel">
           </a>
@@ -38,6 +38,30 @@
             <a class="header-menu__link" href="#feedback">Контакты</a>
           </li>
         </ul>
+
+        <div class="burger-menu">
+          <ul class="burger-menu__list">
+            <li class="burger-menu__item">
+              <a class="burger-menu__link" href="#about">О нас</a>
+            </li>
+            <li class="burger-menu__item">
+              <a class="burger-menu__link" href="#rooms">Номера</a>
+            </li>
+            <li class="burger-menu__item">
+              <a class="burger-menu__link" href="#services">Услуги</a>
+            </li>
+            <li class="burger-menu__item">
+              <a class="burger-menu__link" href="#conditions">Условия</a>
+            </li>
+            <li class="burger-menu__item">
+              <a class="burger-menu__link" href="#feedback">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-menu__burger" onclick="burgerBtnToggle(this)" title="Открыть меню">
+          <span></span>
+        </div>
+
       </div>
     </nav>
 
@@ -124,15 +148,12 @@
 
   <main>
     <section id="about" class="section about">
-      <div class="scroll-to">
-        <a class="scroll-to__link" href="#location">
-          <img src="images/icons/chevron.svg" alt="">
-        </a>
-      </div>
       <article class="about__inner">
-        <h3 class="section__title">MajorDom</h3>
+        <div class="about__title">
+          <h3 class="section__title">MajorDom</h3>
+        </div>
         <div class="about__content">
-          <p class="about__text">
+          <p class="about__content-text">
             Хостел Majordom расположен в городе Севастополь.
             К услугам гостей общий лаундж, большая терраса,
             круглосуточная стойка регистрации, трансфер от/до
@@ -140,19 +161,19 @@
             территории. Также мы осуществляем доставку еды и
             напитков в ваш номер.
           </p>
-          <p class="about__text">
+          <p class="about__content-text">
             В числе удобств номеров кондиционер, телевизор со
             спутниковыми каналами, микроволновая печь, чайник, душ, фен и шкаф. Все номера оснащены холодильником.
           </p>
-          <p class="about__text">
+          <p class="about__content-text">
             В окрестностях популярны велосипедные прогулки. В хостеле можно взять напрокат велосипед или автомобиль.
           </p>
         </div>
       </article>
-      <div class="about__image">
-        <img src="images/about-1.jpg" alt="">
-        <img src="images/about-2.jpg" alt="">
-        <img src="images/about-3.jpg" alt="">
+      <div class="about__images">
+        <img class="about__image about__image--large" style="grid-area: one;" src="images/about-11.jpg" alt="">
+        <img class="about__image about__image--small" style="grid-area: two;" src="images/about-12.jpg" alt="">
+        <img class="about__image about__image--small" style="grid-area: three;" src="images/about-13.jpg" alt="">
       </div>
     </section>
 
@@ -162,29 +183,30 @@
         <p class="section__subtitle">* Все расстояния измерены по прямой. Фактическая дистанция может отличаться.</p>
       </div>
       <div class="location__content">
-        <div class="desc-box location--1" style="background-image: url(images/loc-1.png);">
-          <span>4,8</span> км
+        <div class="desc-box desc-box__icon" style="background-image: url(images/loc-1.png);">
+          <span class="desc-box__char">4,8</span> км
           <p>Артиллерийская бухта</p>
         </div>
-        <div class="desc-box location--2" style="background-image: url(images/loc-3.png);">
-          <span>2</span> км
+        <div class="desc-box desc-box__icon" style="background-image: url(images/loc-3.png);">
+          <span class="desc-box__char">2</span> км
           <p>Супермаркет и рынок</p>
         </div>
-        <div class="desc-box location--3" style="background-image: url(images/loc-2.png);">
-          <span>1</span> км
+        <div class="desc-box desc-box__icon" style="background-image: url(images/loc-2.png);">
+          <span class="desc-box__char">1</span> км
           <p>Побережье Чёрного моря</p>
         </div>
-        <div class="desc-box location--4" style="background-image: url(images/loc-4.png);">
-          <span>63,7</span> км
+        <div class="desc-box desc-box__icon" style="background-image: url(images/loc-4.png);">
+          <span class="desc-box__char">63,7</span> км
           <p>Аэропорт Симферополь</p>
         </div>
       </div>
       <div class="location__map">
-        <a class="location__map-target" href="https://goo.gl/maps/smF7fpBrB9HBBdxp9" title="Открыть на Google Карте" target="_blank">
+        <a class="location__map-target" href="https://goo.gl/maps/smF7fpBrB9HBBdxp9" title="Открыть на Google Карте"
+          target="_blank">
           MajorDom Hostel<br>
           улица Рыбацкий Причал, 1
         </a>
-        <img src="images/map.jpg" alt="">
+        <img class="location__map-image" src="images/map.jpg" alt="">
       </div>
     </section>
 
@@ -211,7 +233,7 @@
                   <li class="descr__item">Бесплатный Wi-Fi</li>
                   <li class="descr__item">Бесплатная парковка</li>
                 </ul>
-                <a class="link-btn" href="#">Подробнее</a>
+                <a class="link-btn room-btn" href="#">Подробнее</a>
               </div>
             </div>
             <div class="splide__slide">
@@ -229,7 +251,7 @@
                   <li class="descr__item">Бесплатный Wi-Fi</li>
                   <li class="descr__item">Бесплатная парковка</li>
                 </ul>
-                <a class="link-btn" href="#">Подробнее</a>
+                <a class="link-btn room-btn" href="#">Подробнее</a>
               </div>
             </div>
             <div class="splide__slide">
@@ -247,7 +269,7 @@
                   <li class="descr__item">Бесплатный Wi-Fi</li>
                   <li class="descr__item">Бесплатная парковка</li>
                 </ul>
-                <a class="link-btn" href="#">Подробнее</a>
+                <a class="link-btn room-btn" href="#">Подробнее</a>
               </div>
             </div>
             <div class="splide__slide">
@@ -265,12 +287,12 @@
                   <li class="descr__item">Бесплатный Wi-Fi</li>
                   <li class="descr__item">Бесплатная парковка</li>
                 </ul>
-                <a class="link-btn" href="#">Подробнее</a>
+                <a class="link-btn room-btn" href="#">Подробнее</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="splide__arrows">
+        <div class="splide__arrows rooms__slider-arrows">
           <button class="splide__arrow splide__arrow--prev"></button>
           <button class="splide__arrow splide__arrow--next"></button>
         </div>
@@ -280,26 +302,25 @@
     <section id="services" class="section services">
       <div class="services__title">
         <h3 class="section__title">Услуги и удобства</h3>
-        <p class="services__descr">
-          В нашем хостеле предоставляется бесплатная парковка на месте. Также имеется бесплатный Wi-Fi на территории
-          всего
-          отеля. Размещение домашних животных допускается по предварительному запросу.
-        </p>
+      </div>
+      <div class="services__descr">
+        В нашем хостеле предоставляется бесплатная парковка на месте. Также имеется бесплатный Wi-Fi на территории
+        всего отеля. Размещение домашних животных допускается по предварительному запросу.
       </div>
       <div class="services__content">
         <ul class="services__list">
-          <li class="list-heading">Ванная комната</li>
+          <li class="services__list-heading">Ванная комната</li>
           <li class="services__item">Полотенца</li>
           <li class="services__item">Тапочки</li>
           <li class="services__item">Фен</li>
         </ul>
         <ul class="services__list">
-          <li class="list-heading">Спальня</li>
+          <li class="services__list-heading">Спальня</li>
           <li class="services__item">Белье</li>
           <li class="services__item">Шкаф или гардероб</li>
         </ul>
         <ul class="services__list">
-          <li class="list-heading">Кухня</li>
+          <li class="services__list-heading">Кухня</li>
           <li class="services__item">Холодильник</li>
           <li class="services__item">Плита</li>
           <li class="services__item">Духовка</li>
@@ -309,7 +330,7 @@
           <li class="services__item">Стиральная машина</li>
         </ul>
         <ul class="services__list">
-          <li class="list-heading">Удобства в номере</li>
+          <li class="services__list-heading">Удобства в номере</li>
           <li class="services__item">Розетка возле кровати</li>
           <li class="services__item">Сушилка для одежды</li>
           <li class="services__item">Вешалка для одежды</li>
@@ -317,25 +338,25 @@
           <li class="services__item">Отопление</li>
         </ul>
         <ul class="services__list">
-          <li class="list-heading">Развлечения</li>
+          <li class="services__list-heading">Развлечения</li>
           <li class="services__item">Настольные игры и/или пазлы</li>
           <li class="services__item">Спутниковое ТВ</li>
           <li class="services__item">Пешеходные экскурсии</li>
         </ul>
         <ul class="services__list">
-          <li class="list-heading">На территории</li>
+          <li class="services__list-heading">На территории</li>
           <li class="services__item">Терраса</li>
           <li class="services__item">Место для пикника</li>
           <li class="services__item">Принадлежности для барбекю</li>
           <li class="services__item">Уличный камин</li>
         </ul>
         <ul class="services__list">
-          <li class="list-heading">Общие</li>
+          <li class="services__list-heading">Общие</li>
           <li class="services__item">Круголсуточная стойка регистрации</li>
           <li class="services__item">Места для курения</li>
         </ul>
         <ul class="services__list">
-          <li class="list-heading">Сервисы</li>
+          <li class="services__list-heading">Сервисы</li>
           <li class="services__item">Трансфер</li>
           <li class="services__item">Доставка питания</li>
           <li class="services__item">Запирающиеся шкафчики</li>
@@ -353,16 +374,16 @@
           <h3 class="section__title conditions__title">Условия размещения</h3>
           <div class="conditions-time">
             <div class="desc-box">
-              <span>
-                00<span class="time-sub">00</span> - 12<span class="time-sub">00</span>
+              <span class="desc-box__char">
+                00<span class="desc-box__char-sub">00</span> - 12<span class="desc-box__char-sub">00</span>
               </span>
               <p>
                 Время заселения
               </p>
             </div>
             <div class="desc-box">
-              <span>
-                10<span class="time-sub">00</span> - 00<span class="time-sub">00</span>
+              <span class="desc-box__char">
+                10<span class="desc-box__char-sub">00</span> - 00<span class="desc-box__char-sub">00</span>
               </span>
               <p>
                 Время выезда
@@ -371,31 +392,30 @@
           </div>
           <div class="conditions-old">
             <div class="desc-box">
-              <span>18</span> лет
+              <span class="desc-box__char">18</span> лет
               <p>Минимальный допустимый возраст для заезда</p>
             </div>
           </div>
           <a class="link-btn" href="#">Подробнее</a>
         </div>
         <div class="conditions__descr">
-          <p>
+          <p class="conditions__descr-text">
             Хостел MajorDom предназначен для временного проживания граждан на срок, согласованный с администрацией
-            Хостела.
-            По истечении согласованного срока, проживающий обязан освободить номер по требованию администрации.
+            Хостела. По истечении согласованного срока, проживающий обязан освободить номер по требованию администрации.
           </p>
-          <p>
+          <p class="conditions__descr-text">
             При желании продлить срок проживания необходимо сообщить об этом администратору Хостела не позднее, чем за 2
             часа до расчетного часа - 12 часов по местному времени. Продление срока проживания в этом же номере возможно
             только при отсутствии на него подтвержденной брони в пользу третьих лиц.
           </p>
-          <p>
+          <p class="conditions__descr-text">
             Разрешается проживание детей любого возраста. Установка детских кроваток, а также дополнительных кроватей не
             предусмотрена.
           </p>
-          <p>
+          <p class="conditions__descr-text">
             Режим работы Хостела MajorDom - круглосуточный.
           </p>
-          <p>
+          <p class="conditions__descr-text">
             Плата за бронирование номера не взимается.
           </p>
         </div>
@@ -409,11 +429,12 @@
             <h4 class="feedback__title">Оставьте заявку</h4>
             <form class="feedback__form" method="post" action="#" name="request">
               <input type="text" name="fristname" id="fristname" placeholder="Имя" required>
-              <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+              <input type="tel" name="phone" id="phone" pattern="+7([0-9]{3})([0-9]{3})([0-9]{2})([0-9]{2})"
+                placeholder="+7 (123) 456-78-90" required>
               <div class="feedback__privacy">
                 <input type="checkbox" name="privacy" id="privacy" required>
                 <label for="privacy">
-                  Отправляя нам свои данные, Вы соглашаетесь с <a href="#" class="privacy-text">политикой
+                  Отправляя нам свои данные, Вы соглашаетесь с <a href="#" class="feedback__privacy-text">политикой
                     конфиденциальности</a>
                 </label>
               </div>
@@ -423,17 +444,25 @@
           <div class="feedback__contacts">
             <h4 class="feedback__title">Контакты</h4>
             <address class="contacts__content">
-              <span class="contacts__title">Телефон</span>
-              <p>
-                <a href="tel:+79787392040">+7 (978) 739-20-40</a>
-              </p>
-              <span class="contacts__title">E-mail</span>
-              <p>
-                <a href="mailto:majordom.sev@gmail.com">majordom.sev@gmail.com</a>
-              </p>
-              <span class="contacts__title">Адрес</span>
-              <p>053099, Россия, Республика Крым<br />
-                г. Севастополь, ул. Рыбаций Причал, 1</p>
+              <div class="contacts__phone">
+                <span class="contacts__title">Телефон</span>
+                <p>
+                  <a href="tel:+79787392040">+7 (978) 739-20-40</a>
+                </p>
+              </div>
+              <div class="contacts__email">
+                <span class="contacts__title">E-mail</span>
+                <p>
+                  <a href="mailto:majordom.sev@gmail.com">majordom.sev@gmail.com</a>
+                </p>
+              </div>
+              <div class="contacts__address">
+                <span class="contacts__title">Адрес</span>
+                <p>
+                  053099, Россия, Республика Крым<br />
+                  г. Севастополь, ул. Рыбаций Причал, 1
+                </p>
+              </div>
             </address>
             <div class="contacts__social">
               <ul class="social__list">
@@ -462,7 +491,7 @@
 
   <footer class="footer">
     <div class="footer__inner">
-      <div class="footer__logo">
+      <div class="logo">
         <a href="#">
           <img src="images/logo.svg" alt="MajorDom Hotel">
         </a>
