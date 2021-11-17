@@ -160,7 +160,7 @@
     top: 0%;
     opacity: 1;
     @media screen and (max-width: $max_device_width_mobile), (max-device-width: $max_device_width_mobile) {
-     height: 100vh;
+      height: 100vh;
     }
   }
   .burger-menu__list {
@@ -594,9 +594,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .splide__track {
-    overflow: visible;
-  }
   .splide__slide {
     display: flex;
     flex-direction: column;

@@ -77,27 +77,32 @@ new Splide('.splide', {
   rewind: false,
   pagination: false,
   fixedWidth: '445px',
-  width: '1140px',
+  width: '1110px',
   gap: 60,
   speed: 500,
   keyboard: true,
 
   breakpoints: {
     1280: {
-      fixedWidth: '360px',
+      fixedWidth: '300px',
+      gap: 34,
+      width: '968px',
     },
     1024: {
-      fixedWidth: '320px',
+      fixedWidth: '369px',
+      width: '768px',
       gap: 30,
     },
     960: {
       fixedWidth: '285px',
+      width: '600px',
       gap: 30,
     },
     640: {
       perPage: 1,
       perMove: 1,
-      fixedWidth: '240px',
+      fixedWidth: '290px',
+      width: '290px',
       gap: 30,
     },
   }
