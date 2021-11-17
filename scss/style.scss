@@ -597,12 +597,6 @@
   .splide__track {
     overflow: visible;
   }
-  .splide__list {
-    gap: 60px;
-    @media screen and (max-width: $max_device_width_laptop), (max-device-width: $max_device_width_laptop) {
-      gap: 30px;
-    }
-  }
   .splide__slide {
     display: flex;
     flex-direction: column;

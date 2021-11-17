@@ -77,6 +77,8 @@ new Splide('.splide', {
   rewind: false,
   pagination: false,
   fixedWidth: '445px',
+  width: '1140px',
+  gap: 60,
   speed: 500,
   keyboard: true,
 
@@ -86,14 +88,17 @@ new Splide('.splide', {
     },
     1024: {
       fixedWidth: '320px',
+      gap: 30,
     },
     960: {
       fixedWidth: '285px',
+      gap: 30,
     },
     640: {
       perPage: 1,
       perMove: 1,
       fixedWidth: '240px',
+      gap: 30,
     },
   }
 }).mount();
