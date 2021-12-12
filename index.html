@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MajorDom Hostel</title>
+  <link rel="icon" type="image/svg" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -74,7 +75,7 @@
                 Мы говорим<br />
                 на Вашем языке
               </h2>
-              <a class="header__btn" href="#">Забронировать</a>
+              <a class="header__btn" href="#" data-modal="feedback">Забронировать</a>
             </div>
           </div>
           <div class="splide__slide" style="background-image: url(images/header-bg2.jpg);">
@@ -83,7 +84,7 @@
                 Мы говорим<br />
                 на Вашем языке
               </h2>
-              <a class="header__btn" href="#">Забронировать</a>
+              <a class="header__btn" href="#" data-modal="feedback">Забронировать</a>
             </div>
           </div>
           <div class="splide__slide" style="background-image: url(images/header-bg3.jpg);">
@@ -92,7 +93,7 @@
                 Мы говорим<br />
                 на Вашем языке
               </h2>
-              <a class="header__btn" href="#">Забронировать</a>
+              <a class="header__btn" href="#" data-modal="feedback">Забронировать</a>
             </div>
           </div>
           <div class="splide__slide" style="background-image: url(images/header-bg4.jpg);">
@@ -101,7 +102,7 @@
                 Мы говорим<br />
                 на Вашем языке
               </h2>
-              <a class="header__btn" href="#">Забронировать</a>
+              <a class="header__btn" href="#" data-modal="feedback">Забронировать</a>
             </div>
           </div>
           <div class="splide__slide" style="background-image: url(images/header-bg5.jpg);">
@@ -110,7 +111,7 @@
                 Мы говорим<br />
                 на Вашем языке
               </h2>
-              <a class="header__btn" href="#">Забронировать</a>
+              <a class="header__btn" href="#" data-modal="feedback">Забронировать</a>
             </div>
           </div>
         </div>
@@ -183,20 +184,20 @@
         <p class="section__subtitle">* Все расстояния измерены по прямой. Фактическая дистанция может отличаться.</p>
       </div>
       <div class="location__content">
-        <div class="desc-box desc-box__icon" style="background-image: url(images/loc-1.png);">
-          <span class="desc-box__char">4,8</span> км
+        <div class="desc-box desc-box__icon" style="background-image: url(images/icons/loc-1.svg);">
+          <p class="desc-box__char"><span>4,8</span> км</p>
           <p>Артиллерийская бухта</p>
         </div>
-        <div class="desc-box desc-box__icon" style="background-image: url(images/loc-3.png);">
-          <span class="desc-box__char">2</span> км
+        <div class="desc-box desc-box__icon" style="background-image: url(images/icons/loc-3.svg);">
+          <p class="desc-box__char"><span>2</span> км</p>
           <p>Супермаркет и рынок</p>
         </div>
-        <div class="desc-box desc-box__icon" style="background-image: url(images/loc-2.png);">
-          <span class="desc-box__char">1</span> км
+        <div class="desc-box desc-box__icon" style="background-image: url(images/icons/loc-2.svg);">
+          <p class="desc-box__char"><span>1</span> км</p>
           <p>Побережье Чёрного моря</p>
         </div>
-        <div class="desc-box desc-box__icon" style="background-image: url(images/loc-4.png);">
-          <span class="desc-box__char">63,7</span> км
+        <div class="desc-box desc-box__icon" style="background-image: url(images/icons/loc-4.svg);">
+          <p class="desc-box__char"><span>63,7</span> км</p>
           <p>Аэропорт Симферополь</p>
         </div>
       </div>
@@ -213,12 +214,12 @@
     <section id="rooms" class="section rooms">
       <div class="rooms__title">
         <h3 class="section__title">Наши номера</h3>
-        <a class="link-btn" href="#">Проверить наличие мест</a>
+        <a class="link-btn" href="#" data-modal="feedback">Проверить наличие мест</a>
       </div>
       <div class="splide">
         <div class="splide__track">
-          <div class="splide__list">
-            <div class="splide__slide">
+          <div class="splide__list" data-slider="rooms">
+            <!-- <div class="splide__slide" data-slide="room">
               <div class="room__image">
                 <img src="images/room-1.jpg" alt="">
               </div>
@@ -233,63 +234,9 @@
                   <li class="descr__item">Бесплатный Wi-Fi</li>
                   <li class="descr__item">Бесплатная парковка</li>
                 </ul>
-                <a class="link-btn room-btn" href="#">Подробнее</a>
+                <a class="link-btn room-btn" href="#" data-modal="room">Подробнее</a>
               </div>
-            </div>
-            <div class="splide__slide">
-              <div class="room__image">
-                <img src="images/room-2.jpg" alt="">
-              </div>
-              <div class="room__descr">
-                <h5 class="descr__title">Спальное место в общем номере с 8 кроватями</h5>
-                <ul class="descr__list">
-                  <li class="descr__item">Размер номера 20 м<sup>2</sup></li>
-                  <li class="descr__item">Вид на море</li>
-                  <li class="descr__item">Вид во внутренний дворик</li>
-                  <li class="descr__item">Кондиционер</li>
-                  <li class="descr__item">Телевизор с плоским экраном</li>
-                  <li class="descr__item">Бесплатный Wi-Fi</li>
-                  <li class="descr__item">Бесплатная парковка</li>
-                </ul>
-                <a class="link-btn room-btn" href="#">Подробнее</a>
-              </div>
-            </div>
-            <div class="splide__slide">
-              <div class="room__image">
-                <img src="images/room-3.jpg" alt="">
-              </div>
-              <div class="room__descr">
-                <h5 class="descr__title">Двухместный номер Делюкс с 1 кроватью и душем</h5>
-                <ul class="descr__list">
-                  <li class="descr__item">Размер номера 18 м<sup>2</sup></li>
-                  <li class="descr__item">Вид на море</li>
-                  <li class="descr__item">Вид во внутренний дворик</li>
-                  <li class="descr__item">Кондиционер</li>
-                  <li class="descr__item">Собственная ванная комната</li>
-                  <li class="descr__item">Бесплатный Wi-Fi</li>
-                  <li class="descr__item">Бесплатная парковка</li>
-                </ul>
-                <a class="link-btn room-btn" href="#">Подробнее</a>
-              </div>
-            </div>
-            <div class="splide__slide">
-              <div class="room__image">
-                <img src="images/room-4.jpg" alt="">
-              </div>
-              <div class="room__descr">
-                <h5 class="descr__title">Двухместный номер с 2 кроватями и душем</h5>
-                <ul class="descr__list">
-                  <li class="descr__item">Размер номера 18 м<sup>2</sup></li>
-                  <li class="descr__item">Вид на море</li>
-                  <li class="descr__item">Вид во внутренний дворик</li>
-                  <li class="descr__item">Кондиционер</li>
-                  <li class="descr__item">Собственная ванная комната</li>
-                  <li class="descr__item">Бесплатный Wi-Fi</li>
-                  <li class="descr__item">Бесплатная парковка</li>
-                </ul>
-                <a class="link-btn room-btn" href="#">Подробнее</a>
-              </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="splide__arrows rooms__slider-arrows">
@@ -373,30 +320,32 @@
         <div class="conditions__content">
           <h3 class="section__title conditions__title">Условия размещения</h3>
           <div class="conditions-time">
-            <div class="desc-box">
-              <span class="desc-box__char">
-                00<span class="desc-box__char-sub">00</span> - 12<span class="desc-box__char-sub">00</span>
-              </span>
-              <p>
-                Время заселения
+            <div class="desc-box desc-box__icon" style="background-image: url(images/icons/clock.svg);">
+              <p class="desc-box__char">
+                <span>14<span class="sub">00</span> - 22<span class="sub">00</span></span>
               </p>
+              <p>Время заселения</p>
             </div>
-            <div class="desc-box">
-              <span class="desc-box__char">
-                10<span class="desc-box__char-sub">00</span> - 00<span class="desc-box__char-sub">00</span>
-              </span>
-              <p>
-                Время выезда
+            <div class="desc-box desc-box__icon">
+              <p class="desc-box__char">
+                <span>10<span class="sub">00</span> - 12<span class="sub">00</span></span>
               </p>
+              <p>Время выезда</p>
             </div>
           </div>
           <div class="conditions-old">
-            <div class="desc-box">
-              <span class="desc-box__char">18</span> лет
+            <div class="desc-box desc-box__icon" style="background-image: url(images/icons/user.svg);">
+              <p class="desc-box__char"><span>18</span> лет</p>
               <p>Минимальный допустимый возраст для заезда</p>
             </div>
           </div>
-          <a class="link-btn" href="#">Подробнее</a>
+          <div class="desc-box desc-box__icon" style="background-image: url(images/icons/pet.svg);">
+            <p>Размещение домашних животных допускается по предварительному запросу.</p>
+          </div>
+          <div class="desc-box desc-box__icon" style="background-image: url(images/icons/money.svg);">
+            <p>Оплата производится только за наличный расчет.</p>
+          </div>
+          <a class="link-btn conditions__more" href="#" data-modal="feedback">Оставить заявку</a>
         </div>
         <div class="conditions__descr">
           <p class="conditions__descr-text">
@@ -428,8 +377,8 @@
           <div class="feedback__request">
             <h4 class="feedback__title">Оставьте заявку</h4>
             <form class="feedback__form" method="post" action="#" name="request">
-              <input type="text" name="fristname" id="fristname" placeholder="Имя" required>
-              <input type="tel" name="phone" id="phone" pattern="+7([0-9]{3})([0-9]{3})([0-9]{2})([0-9]{2})"
+              <input class="input-white" type="text" name="fristname" id="fristname" placeholder="Имя" required>
+              <input class="input-white" type="tel" name="phone" id="phone" pattern="+7([0-9]{3})([0-9]{3})([0-9]{2})([0-9]{2})"
                 placeholder="+7 (123) 456-78-90" required>
               <div class="feedback__privacy">
                 <input type="checkbox" name="privacy" id="privacy" required>
