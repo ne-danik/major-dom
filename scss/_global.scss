@@ -22,6 +22,7 @@ a {
 main {
 	width: 100%;
 	padding-top: 50px;
+	overflow-x: hidden;
 }
 
 .container {
@@ -50,7 +51,7 @@ main {
 	width: 100%;
 	transition: all 300ms;
 	@media screen and (max-width: $max_device_width_desktop), (max-device-width: $max_device_width_desktop) {
-		padding: 100px 15px 50px;
+		padding: 120px 15px 50px;
 	}
 }
 .section__title,

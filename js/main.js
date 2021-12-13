@@ -1,6 +1,6 @@
 const headerNav = document.querySelector('.header__nav');
 const sticky = headerNav.offsetTop;
-const burgerBtn = document.querySelector('.header-menu__burger');
+const burgerBtn = document.querySelector('[data-btn="burger-menu"]');
 const burgerMenu = document.querySelector('.burger-menu');
 
 
@@ -55,9 +55,8 @@ if (window.innerWidth <= 640) {
   }
 }
 
-
-function burgerBtnToggle(e) {
-  e.classList.toggle("open-menu");
+burgerBtn.addEventListener("click", (e) => {
+  e.target.classList.toggle("open-menu");
   burgerMenu.classList.toggle("open-menu");
 
   if (window.innerWidth <= 640) {
@@ -67,7 +66,7 @@ function burgerBtnToggle(e) {
       document.querySelector('body').style.overflowY = 'hidden';
     }
   }
-}
+});
 
 
 // Class RoomsSlide
@@ -112,9 +111,8 @@ const roomsSliderPromise = new Promise(function (resolve) {
 }).then(() => {
   new Splide('.splide', {
     type: 'slide',
-    focus: 'center',
     perPage: 2,
-    perMove: 1,
+    perMove: 2,
     rewind: false,
     pagination: false,
     fixedWidth: '445px',
@@ -123,7 +121,7 @@ const roomsSliderPromise = new Promise(function (resolve) {
     speed: 500,
     keyboard: true,
     breakpoints: {
-      1280: {
+      1366: {
         fixedWidth: '340px',
         gap: 60,
         width: '968px',
@@ -134,16 +132,18 @@ const roomsSliderPromise = new Promise(function (resolve) {
         gap: 45,
       },
       960: {
+        focus: 'center',
         perPage: 1,
+        perMove: 1,
         fixedWidth: '340px',
         width: '600px',
         gap: 60,
       },
       640: {
         perPage: 1,
-        fixedWidth: '240px',
+        fixedWidth: '280px',
         width: '290px',
-        gap: 15,
+        gap: 30,
       },
     }
   }).mount();
@@ -204,8 +204,9 @@ class Modal {
     const modalSubtitle = this._subtitle !== false ? `<p class="modal__subtitle">${this._subtitle}</p>` : "";
     const modalContent = this._content !== false ? `<div class="modal__content">${this._content}</div>` : "";
     modal.classList.add('modal');
+    const width = typeof (this._width) != 'string' ? this._width + "px" : this._width;
     modal.innerHTML = `
-      <div class="modal__dialog" style="max-width:${this._width}px;">
+      <div class="modal__dialog" style="max-width:${width};">
         <button class="modal__btn-close" data-modal-btn="close"></button>
         <div class="modal__header">
           ${modalTitle}
@@ -223,6 +224,7 @@ class Modal {
 
 // Open Feedback From in Modal
 document.addEventListener("click", (e) => {
+
   if (e.target.dataset.modal) {
     e.preventDefault();
   }
@@ -414,7 +416,7 @@ for (let i = 0; i < roomSlides.length; i++) {
         servicesList += `<li class="service__item">${service}</li>`;
       });
       let roomMainThumb = "";
-      rooms[i].thumb.forEach((thumb, i) => {
+      rooms[i].thumb.forEach(thumb => {
         roomMainThumb += `
             <li class="splide__slide">
               <img src="${thumb}" alt="${thumb}" />
@@ -422,7 +424,7 @@ for (let i = 0; i < roomSlides.length; i++) {
         `;
       });
       let roomThumbs = "";
-      rooms[i].thumb.forEach((thumb, i) => {
+      rooms[i].thumb.forEach(thumb => {
         roomThumbs += `
             <li class="thumbnail">
               <img src="${thumb}" alt="${thumb}" />
@@ -475,7 +477,7 @@ for (let i = 0; i < roomSlides.length; i++) {
             </div>
           </div>
           `,
-        width: 800,
+        width: 968,
       });
       createThumbSlider();
     }
