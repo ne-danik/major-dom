@@ -1,5 +1,5 @@
 [{
-  "src": "images/room-1.jpg",
+  "src": "images/room-1.webp",
   "title": "Кровать в общем номере",
   "price": "700",
   "area": "25",
@@ -7,9 +7,9 @@
   "services": ["Помещение полностью находится на первом этаже", "Белье", "Шкаф или гардероб", "Кондиционер", "Деревянный или паркетный пол", "Звукоизоляция", "Гладильные принадлежности", "Утюг", "Отопление", "Холодильник", "Микроволновая печь", "Электрический чайник", "Плита", "Кухонные принадлежности", "Обеденный стол", "Духовка", "Кухня", "Обеденный стол", "Стиральная машина", "Телевизор", "Спутниковые каналы", "Розетка около кровати", "Вешалка для одежды", "Сушилка для одежды"],
   "benefits": ["Бесплатный Wi-Fi", "Бесплатная парковка"],
   "smoking": "запрещено",
-  "thumb": ["images/rooms/room1/1.jpg", "images/rooms/room1/2.jpg", "images/rooms/room1/3.jpg", "images/rooms/room1/4.jpg", "images/rooms/room1/5.jpg", "images/rooms/room1/6.jpg", "images/rooms/room1/7.jpg", "images/rooms/room1/8.jpg", "images/rooms/room1/9.jpg"]
+  "thumb": ["images/rooms/room1/1.webp", "images/rooms/room1/2.webp", "images/rooms/room1/3.webp", "images/rooms/room1/4.webp", "images/rooms/room1/5.webp", "images/rooms/room1/6.webp", "images/rooms/room1/7.webp", "images/rooms/room1/8.webp", "images/rooms/room1/9.webp"]
 }, {
-  "src": "images/room-2.jpg",
+  "src": "images/room-2.webp",
   "title": "Спальное место в общем номере с 8 кроватями",
   "price": "700",
   "area": "20",
@@ -17,9 +17,9 @@
   "services": ["Помещение полностью находится на первом этаже", "Белье", "Шкаф или гардероб", "Кондиционер", "Деревянный или паркетный пол", "Звукоизоляция", "Гладильные принадлежности", "Утюг", "Отопление", "Холодильник", "Микроволновая печь", "Электрический чайник", "Плита", "Кухонные принадлежности", "Обеденный стол", "Духовка", "Кухня", "Обеденный стол", "Стиральная машина", "Телевизор", "Спутниковые каналы", "Розетка около кровати", "Вешалка для одежды", "Сушилка для одежды"],
   "benefits": ["Бесплатный Wi-Fi", "Бесплатная парковка"],
   "smoking": "запрещено",
-  "thumb": ["images/rooms/room2/1.jpg", "images/rooms/room2/2.jpg", "images/rooms/room2/3.jpg", "images/rooms/room2/4.jpg", "images/rooms/room2/5.jpg"]
+  "thumb": ["images/rooms/room2/1.webp", "images/rooms/room2/2.webp", "images/rooms/room2/3.webp", "images/rooms/room2/4.webp", "images/rooms/room2/5.webp"]
 }, {
-  "src": "images/room-3.jpg",
+  "src": "images/room-3.webp",
   "title": "Двухместный номер Делюкс с 1 кроватью и душем",
   "price": "2 200",
   "area": "18",
@@ -27,9 +27,9 @@
   "services": ["Помещение полностью находится на первом этаже", "Белье", "Шкаф или гардероб", "Кондиционер", "Деревянный или паркетный пол", "Звукоизоляция", "Гладильные принадлежности", "Утюг", "Отопление", "Холодильник", "Микроволновая печь", "Электрический чайник", "Плита", "Кухонные принадлежности", "Обеденный стол", "Духовка", "Кухня", "Обеденный стол", "Стиральная машина", "Телевизор", "Спутниковые каналы", "Розетка около кровати", "Вешалка для одежды", "Сушилка для одежды"],
   "benefits": ["Бесплатный Wi-Fi", "Бесплатная парковка"],
   "smoking": "запрещено",
-  "thumb": ["images/rooms/room3/1.jpg", "images/rooms/room3/2.jpg", "images/rooms/room3/3.jpg", "images/rooms/room3/4.jpg", "images/rooms/room3/5.jpg", "images/rooms/room3/6.jpg", "images/rooms/room3/7.jpg"]
+  "thumb": ["images/rooms/room3/1.webp", "images/rooms/room3/2.webp", "images/rooms/room3/3.webp", "images/rooms/room3/4.webp", "images/rooms/room3/5.webp", "images/rooms/room3/6.webp", "images/rooms/room3/7.webp"]
 }, {
-  "src": "images/room-4.jpg",
+  "src": "images/room-4.webp",
   "title": "Двухместный номер с 2 кроватями и душем",
   "price": "2 200",
   "area": "18",
@@ -37,5 +37,5 @@
   "services": ["Помещение полностью находится на первом этаже", "Белье", "Шкаф или гардероб", "Кондиционер", "Деревянный или паркетный пол", "Звукоизоляция", "Гладильные принадлежности", "Утюг", "Отопление", "Холодильник", "Микроволновая печь", "Электрический чайник", "Плита", "Кухонные принадлежности", "Обеденный стол", "Духовка", "Кухня", "Обеденный стол", "Стиральная машина", "Телевизор", "Спутниковые каналы", "Розетка около кровати", "Вешалка для одежды", "Сушилка для одежды"],
   "benefits": ["Бесплатный Wi-Fi", "Бесплатная парковка"],
   "smoking": "запрещено",
-  "thumb": ["images/rooms/room4/1.jpg", "images/rooms/room4/2.jpg", "images/rooms/room4/3.jpg", "images/rooms/room4/4.jpg", "images/rooms/room4/5.jpg"]
+  "thumb": ["images/rooms/room4/1.webp", "images/rooms/room4/2.webp", "images/rooms/room4/3.webp", "images/rooms/room4/4.webp", "images/rooms/room4/5.webp"]
 }]
